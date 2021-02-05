@@ -1,0 +1,17 @@
+<section>
+	<h4 class=" text-center">
+		Validators
+	</h4>
+	<form [formGroup]="form">
+		<div class="row justify-content-center">
+			<input type="text" class="form-control col-7 mb-3" formControlName="nome" name="nome" id="nome">
+			<input type="number" class="form-control col-7" formControlName="age" name="age" id="age">
+    </div>
+			<div class="option row justify-content-center">
+				<button (click)="clear()" class="btm btn-primary mt-3" [ngClass]="form.invalid ? 'btn-danger' :  'btn-warning' " [disabled]="form.invalid">Limpar</button>
+			</div>
+	</form>
+	<p>* The button color is changed if the form is invalid. If Name more then eigth characters or </p>
+
+
+</section>
